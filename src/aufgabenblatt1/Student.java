@@ -1,16 +1,23 @@
 package aufgabenblatt1;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
+import java.util.Comparator;
+>>>>>>> 0552985649d89be8da5a1c08e3ec050cb393e51d
 import java.util.List;
 
 
 /**
  * 
+<<<<<<< HEAD
  * @author Theophile Teyou Soh
  * HAW HAMBURG
  * TI PM2
  * WS 2015
  * 
+=======
+>>>>>>> 0552985649d89be8da5a1c08e3ec050cb393e51d
  * @author Cyrille Ngassam Nkwenga
  * HAW HAMBURG
  * TI PM2

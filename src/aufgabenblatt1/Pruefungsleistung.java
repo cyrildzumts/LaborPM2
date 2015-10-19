@@ -14,12 +14,18 @@ public class Pruefungsleistung {
 	 */
 	private double note;
 	
+<<<<<<< HEAD
 	
 	public Pruefungsleistung(String module, double note){
 		if(!module.isEmpty()){
 			this.module = module;
 			this.note = note;
 		}
+=======
+	public Pruefungsleistung(String module, double note){
+		this.module = module;
+		this.note = note;
+>>>>>>> 0552985649d89be8da5a1c08e3ec050cb393e51d
 	}
 	
 	/** 
@@ -34,7 +40,10 @@ public class Pruefungsleistung {
 	 */
 	public double getNote(){
 		return note;
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 0552985649d89be8da5a1c08e3ec050cb393e51d
 	}
 	
 	public void setModule(String module){
