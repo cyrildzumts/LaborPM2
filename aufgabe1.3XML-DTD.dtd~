@@ -1,0 +1,7 @@
+<? xml version = "1.0" ?>
+<!ELEMENT geraet (sensor)*>
+<!ATTLIST geraet name CDATA #REQUIRED ip CDATA #REQUIRED>
+<!ELEMENT sensor (typ?, wert*) >
+<!ATTLIST sensor ort CDATA #REQUIRED>
+<!ELEMENT typ EMPTY>
+<!ELEMENT wert #PCDATA >
