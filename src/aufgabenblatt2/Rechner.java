@@ -2,6 +2,7 @@ package aufgabenblatt2;
 
 /**
  * @author Cyrille Ngassam Nkwenga
+ * Theophile Teyou Soh
  * 
  * 
  * HAW HAMBURG

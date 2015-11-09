@@ -14,11 +14,14 @@ public class ExamPerformances {
 	 */
 	private double note;
 	
+
 	public ExamPerformances(String module, double note){
-		this.module = module;
-		this.note = note;
+		if(!module.isEmpty()){
+			this.module = module;
+			this.note = note;
+		}
 	}
-	
+
 	/** 
 	 * @return Liefert den Modulename zurueck
 	 */
@@ -31,6 +34,9 @@ public class ExamPerformances {
 	 */
 	public double getNote(){
 		return note;
+
+		
+
 	}
 	
 	public void setModule(String module){

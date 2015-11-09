@@ -6,6 +6,11 @@ import java.util.List;
 
 /**
  * 
+ * @author Theophile Teyou Soh
+ * HAW HAMBURG
+ * TI PM2
+ * WS 2015
+ * 
  * @author Cyrille Ngassam Nkwenga
  * HAW HAMBURG
  * TI PM2
