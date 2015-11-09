@@ -1,6 +1,6 @@
 package aufgabenblatt1;
 
-public class Pruefungsleistung {
+public class ExamPerformances {
 
 	
 	/**
@@ -14,7 +14,7 @@ public class Pruefungsleistung {
 	 */
 	private double note;
 	
-	public Pruefungsleistung(String module, double note){
+	public ExamPerformances(String module, double note){
 		this.module = module;
 		this.note = note;
 	}

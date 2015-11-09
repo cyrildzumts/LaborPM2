@@ -1,7 +1,6 @@
 package aufgabenblatt1;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 
@@ -20,13 +19,13 @@ public class Student implements Comparable<Student>{
 	private String vorname;
 	private String nachname;
 	private int matrikelNummer;
-	private List<Pruefungsleistung> leistungen;
+	private List<ExamPerformances> leistungen;
 	
 	public Student(String vorname, String nachname, int matrikelNummer){
 		this.vorname = vorname;
 		this.nachname = nachname;
 		this.matrikelNummer = matrikelNummer;
-		leistungen = new ArrayList<Pruefungsleistung>();
+		leistungen = new ArrayList<ExamPerformances>();
 		
 	}
 
@@ -54,11 +53,11 @@ public class Student implements Comparable<Student>{
 		this.matrikelNummer = matrikelNummer;
 	}
 
-	public List<Pruefungsleistung> getLeistungen() {
+	public List<ExamPerformances> getLeistungen() {
 		return leistungen;
 	}
 
-	public void setLeistungen(List<Pruefungsleistung> leistungen) {
+	public void setLeistungen(List<ExamPerformances> leistungen) {
 		this.leistungen = leistungen;
 	}
 
