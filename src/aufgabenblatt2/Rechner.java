@@ -37,26 +37,6 @@ public class Rechner {
 	 * the implemented Interface to be used.
 	 */
 	private Map<Operation, BinaryOperator<Double>> rechnerMap;
-//	
-//	private BinaryOperator<Double> addInterface = (Double op1, Double op2) ->{
-//		System.out.println("ADD");
-//		return (op1 + op2);
-//	};
-//	private BinaryOperator<Double> subInterface = (Double op1, Double op2) ->{
-//		System.out.println("SUB");
-//		return (op1 - op2);
-//	};
-//	private BinaryOperator<Double> mulInterface = (Double op1, Double op2) ->{
-//		System.out.println("MUL");
-//		return (op1 * op2);
-//	};
-//	private BinaryOperator<Double> divInterface = (Double op1, Double op2) ->{
-//		System.out.println("DIV");
-//		if(!(Double.compare(op2, 0.0) == 0 ))
-//			return (op1 / op2);
-//		return -1.0;
-//	};
-	
 	/**
 	 * With help from Lamdas we map the relation between the operation key 
 	 * and the code to be run.
