@@ -37,8 +37,11 @@ public class Controller extends Application{
 		command = new Command(model);
 		validate = new Button("Eingabe");
 		create = new Button("Seten / neu");
+		create.setStyle("-fx-base: #3FB8B3");
+		validate.setStyle("-fx-base: #615C8D");
 		
-		listView.getItems().add("Nothing in The list");
+		//listView.getItems().add("Nothing in The list");
+		//listView.setStyle(value);
 		textField = new TextField();
 		rightCorner = new VBox(10);
 		topCorner = new HBox(new Label("Path Drawing"));
@@ -58,6 +61,7 @@ public class Controller extends Application{
 	{
 		create.setOnAction(e->view.addPolygon());
 		validate.setOnAction(e->command.apply(textField.getText()));
+		
 	}
 	
 	public static void main(String []args){

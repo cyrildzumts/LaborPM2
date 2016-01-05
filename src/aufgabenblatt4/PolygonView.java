@@ -32,19 +32,15 @@ public class PolygonView extends BorderPane implements  Observer{
 		this.model = model;
 		model.addObserver(this);
 		currentpath = new Path();
-
-		
 		lastPoint = null;
 		title = new Label("PolygonView");
 		this.setTop(title);
 		this.setPrefSize(700.0, 800.0);
 		this.listView = listView;
+		setOnMouseClicked(e->model.getCurrentPolygon().addPoint(new Point(e.getX(),e.getY())));
+		setStyle("-fx-background: #4F4857");
 	}
 	
-	public void setCommand(Command command)
-	{
-		this.command = command;
-	}
 	@Override
 	public void update(Observable o, Object arg) {
 		// if it is a point, then we simply continue 
@@ -55,7 +51,7 @@ public class PolygonView extends BorderPane implements  Observer{
 			if(lastPoint == null)
 			{   currentpath = new Path();
 				this.getChildren().add(currentpath);
-				currentpath.setStroke(Color.CYAN);
+				currentpath.setStroke(Color.web("#E84144"));
 				currentpath.getElements().add(new MoveTo(point.getX(), point.getY()));
 			}
 			else
@@ -64,22 +60,21 @@ public class PolygonView extends BorderPane implements  Observer{
 				
 			}
 			lastPoint = point;
-			
-			this.getChildren().add(new Ellipse( point.getX(), point.getY(), 5.0, 5.0));
+			Ellipse ellispe = new Ellipse( point.getX(), point.getY(), 5.0, 5.0);
+			ellispe.setStroke(Color.web("#70AEA7"));
+			this.getChildren().add(ellispe);
 		}
 		// 
 		else if (arg instanceof String)
 		{
 			String signal = (String)arg;
-			currentpath.setStroke(Color.BLACK);
+			currentpath.setStroke(Color.web("#8F618F"));
 			listView.getItems().add(signal);
 			lastPoint = null;
 		}
 		else
 			{
-				//currentpath = new Path();
-				lastPoint = null;
-				
+				lastPoint = null;	
 			}
 	}
 	
